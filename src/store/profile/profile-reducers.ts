@@ -9,7 +9,10 @@ const initialState: ProfileState = {
 const profileReducers = (state: ProfileState = initialState, action: Action): ProfileState => {
     switch (action.type) {
         case profileTypes.SET_PROFILE:
-            return action.payload;
+            return {
+                ...state,
+                about: action.payload.about
+            };
         default:
             return state;
     }
