@@ -9,7 +9,10 @@ const initialState: ExperienceState = {
 const experienceReducers = (state: ExperienceState = initialState, action: Action) => {
     switch (action.type) {
         case experienceTypes.SET_EXPERIENCE:
-            return action.payload;
+            return {
+                ...state,
+                experience: action.payload.experience
+            };
         default:
             return state;
     }
