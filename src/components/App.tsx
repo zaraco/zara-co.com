@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import './App.scss';
 import {useAppDispatch} from "../store/hooks";
 import profileActions from "../store/profile/profile-actions";
+import experienceActions from "../store/experience/experience-actions";
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
 
   useEffect(() => {
     dispatch(profileActions.fetchProfile());
+    dispatch(experienceActions.fetchExperience());
   },[dispatch])
 
   return (
