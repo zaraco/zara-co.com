@@ -10,6 +10,24 @@ export type About = {
     image: string;
 }
 
+export type Certificate = {
+    title: string;
+    company: string;
+    date: string;
+    link: string;
+    image: string;
+}
+
+export type Publication = {
+    title: string;
+    journal: string;
+    date: string;
+    link: string;
+}
+
 export type ProfileState = {
     about?: About;
+    certificates?: Certificate[];
+    publications?: Publication[];
+    languages?: string[];
 }
