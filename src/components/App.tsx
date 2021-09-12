@@ -7,6 +7,7 @@ import skillsActions from "../store/skills/skills-actions";
 import Header from "./layout/header/Header";
 import Experience from "./layout/experience/Experience";
 import {Container} from "react-bootstrap";
+import Skills from "./layout/skills/Skills";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Container>
         <Header/>
         <Experience/>
+        <Skills/>
       </Container>
     </div>
   );

@@ -1,0 +1,24 @@
+.skill-group {
+  &-card {
+    width: 100%;
+    min-height: 100px;
+    margin: 8px 0;
+    box-shadow: 0 0 18px -5px rgba(23,79,92,0.26);
+    -webkit-box-shadow: 0 0 18px -5px rgba(23,79,92,0.26);
+    -moz-box-shadow: 0 0 18px -5px rgba(23,79,92,0.26);
+    cursor: pointer;
+    transition: 2s;
+    &:hover {
+      box-shadow: 0 0 18px -5px rgba(23,79,92,0.76);
+      -webkit-box-shadow: 0 0 18px -5px rgba(23,79,92,0.76);
+      -moz-box-shadow: 0 0 18px -5px rgba(23,79,92,0.76);
+
+    }
+  }
+  &-title {
+    font-size: 20px;
+  }
+  &-skill {
+    margin-right: 5px;
+  }
+}

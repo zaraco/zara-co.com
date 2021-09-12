@@ -3,7 +3,7 @@ import './Experience.scss';
 import {Col, Row} from "react-bootstrap";
 import {useAppSelector} from "../../../store/hooks";
 import experienceSelectors from "../../../store/experience/experience-selectors";
-import ExperienceItem from "../../item/ExperienceItem";
+import ExperienceItem from "../../item/experience-item/ExperienceItem";
 
 function Experience() {
 

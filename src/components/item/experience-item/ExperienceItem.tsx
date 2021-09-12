@@ -1,9 +1,9 @@
 import React from "react";
-import {Experience} from "../../store/experience/models_d";
+import {Experience} from "../../../store/experience/models_d";
 import {Badge, Card, Col, Image, Row} from "react-bootstrap";
 import './ExperienceItem.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faMapMarker, faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
+import {faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
 
 interface ExperienceItemProps extends React.HTMLAttributes<HTMLDivElement> {
     experience: Experience;
