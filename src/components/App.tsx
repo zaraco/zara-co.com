@@ -8,6 +8,7 @@ import Header from "./layout/header/Header";
 import Experience from "./layout/experience/Experience";
 import {Container} from "react-bootstrap";
 import Skills from "./layout/skills/Skills";
+import Publications from "./layout/publications/publications";
 
 
 function App() {
@@ -23,8 +24,9 @@ function App() {
     <div className="app">
       <Container>
         <Header/>
-        <Experience/>
         <Skills/>
+        <Experience/>
+        <Publications/>
       </Container>
     </div>
   );
