@@ -4,7 +4,9 @@ import {useAppDispatch} from "../store/hooks";
 import profileActions from "../store/profile/profile-actions";
 import experienceActions from "../store/experience/experience-actions";
 import skillsActions from "../store/skills/skills-actions";
-import Header from "./layout/Header";
+import Header from "./layout/header/Header";
+import Experience from "./layout/experience/Experience";
+import {Container} from "react-bootstrap";
 
 
 function App() {
@@ -18,7 +20,10 @@ function App() {
 
   return (
     <div className="app">
-      <Header/>
+      <Container>
+        <Header/>
+        <Experience/>
+      </Container>
     </div>
   );
 }

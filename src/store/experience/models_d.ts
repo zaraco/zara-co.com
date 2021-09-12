@@ -1,9 +1,10 @@
 export type Experience = {
     title: string,
-    description: string,
+    technologies: string[],
     company: string,
     location: string,
     duration: string,
+    image: string,
 }
 
 export type ExperienceState = {
