@@ -4,6 +4,9 @@ import profileTypes from "./profile-types";
 
 const initialState: ProfileState = {
     about: undefined,
+    publications: [],
+    certificates: [],
+    languages: [],
 }
 
 const profileReducers = (state: ProfileState = initialState, action: Action): ProfileState => {
@@ -11,7 +14,10 @@ const profileReducers = (state: ProfileState = initialState, action: Action): Pr
         case profileTypes.SET_PROFILE:
             return {
                 ...state,
-                about: action.payload.about
+                about: action?.payload?.about,
+                publications: action?.payload?.publications,
+                certificates: action?.payload?.certificates,
+                languages: action?.payload?.languages,
             };
         default:
             return state;

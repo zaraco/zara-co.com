@@ -23,6 +23,7 @@ export type Publication = {
     journal: string;
     date: string;
     link: string;
+    imag: string;
 }
 
 export type ProfileState = {
