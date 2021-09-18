@@ -1,5 +1,5 @@
 import { State } from "../models_d";
-import {About, Certificate, Publication} from "./models_d";
+import {About, Certificate, Hobby, Publication} from "./models_d";
 
 
 const profileSelectors = {
@@ -7,5 +7,6 @@ const profileSelectors = {
     getCertificates: (state: State): Certificate[] | undefined => state?.profile?.certificates,
     getPublications: (state: State): Publication[] | undefined => state?.profile?.publications,
     getLanguages: (state: State): string[] | undefined => state?.profile?.languages,
+    getHobbies: (state: State): Hobby[] | undefined => state?.profile?.hobbies,
 }
 export default profileSelectors;

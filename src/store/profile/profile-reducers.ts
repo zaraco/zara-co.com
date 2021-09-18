@@ -7,6 +7,7 @@ const initialState: ProfileState = {
     publications: [],
     certificates: [],
     languages: [],
+    hobbies: [],
 }
 
 const profileReducers = (state: ProfileState = initialState, action: Action): ProfileState => {
@@ -18,6 +19,7 @@ const profileReducers = (state: ProfileState = initialState, action: Action): Pr
                 publications: action?.payload?.publications,
                 certificates: action?.payload?.certificates,
                 languages: action?.payload?.languages,
+                hobbies: action?.payload?.hobbies,
             };
         default:
             return state;
