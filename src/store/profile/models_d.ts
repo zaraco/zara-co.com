@@ -30,10 +30,15 @@ export type Hobby = {
     icon: string;
 }
 
+export type Language = {
+    title: string;
+    level: string;
+}
+
 export type ProfileState = {
     about?: About;
     certificates?: Certificate[];
     publications?: Publication[];
-    languages?: string[];
+    languages?: Language[];
     hobbies?: Hobby[];
 }

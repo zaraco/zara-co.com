@@ -13,6 +13,7 @@ import Certificates from "./layout/certificates/Certificates";
 import portfolioActions from "../store/portfolio/portfolio-actions";
 import Portfolio from "./layout/portfolio/Portfolio";
 import Hobbies from "./layout/hobbies/Hobbies";
+import Languages from "./layout/languages/Languages";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
                 <Publications/>
                 <Certificates/>
                 <Portfolio/>
+                <Languages/>
                 <Hobbies/>
             </Container>
         </div>
