@@ -12,22 +12,15 @@ const PublicationItem: React.FC<PublicationItemProps> = (props) => {
         <div className="publication-item">
             <Card className="publication-item-card">
                 <Card.Body>
-                    <Row>
-                        <Col xs={2}>
-                            <Image className="publication-item-image" src={props?.publication?.imag} roundedCircle/>
-                        </Col>
-                        <Col xs={10}>
-                            <h4 className="publication-item-title">
-                                {props.publication.title}
-                            </h4>
-                            <div className="publication-item-journal">
-                                {props.publication.journal}
-                            </div>
-                            <div className="publication-item-link">
-                                {props.publication.link}
-                            </div>
-                        </Col>
-                    </Row>
+                    <h4 className="publication-item-title">
+                        {props.publication.title}
+                    </h4>
+                    <div className="publication-item-journal">
+                        {props.publication.journal}
+                    </div>
+                    <div className="publication-item-link">
+                        {props.publication.link}
+                    </div>
                 </Card.Body>
             </Card>
         </div>
