@@ -10,6 +10,8 @@ import {Container} from "react-bootstrap";
 import Skills from "./layout/skills/Skills";
 import Publications from "./layout/publications/publications";
 import Certificates from "./layout/certificates/Certificates";
+import portfolioActions from "../store/portfolio/portfolio-actions";
+import Portfolio from "./layout/portfolio/Portfolio";
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
         dispatch(profileActions.fetchProfile());
         dispatch(experienceActions.fetchExperience());
         dispatch(skillsActions.fetchAction());
+        dispatch(portfolioActions.fetchPortfolio());
     }, [dispatch])
 
     return (
@@ -29,7 +32,7 @@ function App() {
                 <Experience/>
                 <Publications/>
                 <Certificates/>
-
+                <Portfolio/>
             </Container>
         </div>
     );

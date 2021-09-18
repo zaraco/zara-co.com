@@ -1,6 +1,6 @@
 import React from "react";
 import {Publication} from "../../../store/profile/models_d";
-import {Card, Col, Image, Row} from "react-bootstrap";
+import {Card} from "react-bootstrap";
 import "./publicationItem.scss";
 
 interface PublicationItemProps extends React.HTMLAttributes<HTMLDivElement> {

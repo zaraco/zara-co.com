@@ -4,6 +4,7 @@ import profileReducers from "./profile/profile-reducers";
 import saga from "./saga";
 import experienceReducers from "./experience/experience-reducers";
 import skillsReducers from "./skills/skills-reducers";
+import portfolioReducers from "./portfolio/portfolio-reducers";
 
 const sagaMiddleware = createSagaMiddleware();
 export const store = configureStore({
@@ -11,6 +12,7 @@ export const store = configureStore({
     profile: profileReducers,
     experience: experienceReducers,
     skills: skillsReducers,
+    portfolio: portfolioReducers
   },
   middleware: [sagaMiddleware]
 });

@@ -7,7 +7,7 @@ const profileActions = {
         type: profileTypes.FETCH_PROFILE
     }),
 
-    setProfile: (payload: ProfileState): Action<ProfileState>  => ({
+    setProfile: (payload: ProfileState): Action<ProfileState> => ({
         type: profileTypes.SET_PROFILE,
         payload: payload,
     }),
