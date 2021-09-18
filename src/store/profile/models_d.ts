@@ -25,9 +25,15 @@ export type Publication = {
     link: string;
 }
 
+export type Hobby = {
+    title: string;
+    icon: string;
+}
+
 export type ProfileState = {
     about?: About;
     certificates?: Certificate[];
     publications?: Publication[];
     languages?: string[];
+    hobbies?: Hobby[];
 }
