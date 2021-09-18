@@ -9,27 +9,30 @@ import Experience from "./layout/experience/Experience";
 import {Container} from "react-bootstrap";
 import Skills from "./layout/skills/Skills";
 import Publications from "./layout/publications/publications";
+import Certificates from "./layout/certificates/Certificates";
 
 
 function App() {
-  const dispatch = useAppDispatch();
+    const dispatch = useAppDispatch();
 
-  useEffect(() => {
-    dispatch(profileActions.fetchProfile());
-    dispatch(experienceActions.fetchExperience());
-    dispatch(skillsActions.fetchAction());
-  },[dispatch])
+    useEffect(() => {
+        dispatch(profileActions.fetchProfile());
+        dispatch(experienceActions.fetchExperience());
+        dispatch(skillsActions.fetchAction());
+    }, [dispatch])
 
-  return (
-    <div className="app">
-      <Container>
-        <Header/>
-        <Skills/>
-        <Experience/>
-        <Publications/>
-      </Container>
-    </div>
-  );
+    return (
+        <div className="app">
+            <Container>
+                <Header/>
+                <Skills/>
+                <Experience/>
+                <Publications/>
+                <Certificates/>
+
+            </Container>
+        </div>
+    );
 }
 
 export default App;
