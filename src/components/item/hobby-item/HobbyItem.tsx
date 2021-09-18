@@ -1,6 +1,6 @@
 import React from "react";
 import {Hobby} from "../../../store/profile/models_d";
-import {Card, Col, Row} from "react-bootstrap";
+import {Card} from "react-bootstrap";
 import "./HobbyItem.scss";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";

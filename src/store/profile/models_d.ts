@@ -35,10 +35,17 @@ export type Language = {
     level: string;
 }
 
+export type Education = {
+    title: string;
+    level: string;
+    graduatedAt: number;
+}
+
 export type ProfileState = {
     about?: About;
     certificates?: Certificate[];
     publications?: Publication[];
     languages?: Language[];
     hobbies?: Hobby[];
+    education?: Education[];
 }

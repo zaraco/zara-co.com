@@ -1,4 +1,4 @@
-import {ProfileState} from "./models_d";
+import {Education, ProfileState} from "./models_d";
 import {Action} from "../models_d";
 import profileTypes from "./profile-types";
 
@@ -8,6 +8,7 @@ const initialState: ProfileState = {
     certificates: [],
     languages: [],
     hobbies: [],
+    education: [],
 }
 
 const profileReducers = (state: ProfileState = initialState, action: Action): ProfileState => {
@@ -20,6 +21,7 @@ const profileReducers = (state: ProfileState = initialState, action: Action): Pr
                 certificates: action?.payload?.certificates,
                 languages: action?.payload?.languages,
                 hobbies: action?.payload?.hobbies,
+                education: action?.payload?.education,
             };
         default:
             return state;
