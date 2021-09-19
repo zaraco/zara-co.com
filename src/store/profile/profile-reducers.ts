@@ -1,4 +1,4 @@
-import {Education, ProfileState} from "./models_d";
+import {ProfileState} from "./models_d";
 import {Action} from "../models_d";
 import profileTypes from "./profile-types";
 
