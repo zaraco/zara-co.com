@@ -1,7 +1,9 @@
+@import "node_modules/bootstrap/scss/bootstrap-grid";
+
 .experience-item {
   &-card {
     width: 100%;
-    min-height: 220px;
+    min-height: 100px;
     margin: 8px 0;
     box-shadow: 0 0 18px -5px rgba(23,79,92,0.26);
     -webkit-box-shadow: 0 0 18px -5px rgba(23,79,92,0.26);
@@ -14,19 +16,43 @@
       -moz-box-shadow: 0 0 18px -5px rgba(23,79,92,0.76);
 
     }
+    &-body {
+      display: flex;
+      flex-direction: row;
+    }
   }
   &-image {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
+    @include media-breakpoint-up(md) {
+      width: 70px;
+      height: 70px;
+    }
+    @media print {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  &-info {
+    flex: auto;
+    padding-left: 10px;
   }
   &-technologies {
-    margin: 20px 0;
+    margin: 10px 0;
   }
   &-technology {
     margin-right: 5px;
   }
   &-location-icon {
     margin-right: 5px;
+  }
+  &-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  &-company {
+    font-size: 14px;
   }
 }
