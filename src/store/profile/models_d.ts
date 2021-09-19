@@ -1,3 +1,5 @@
+import {Icon} from "../models_d";
+
 export type About = {
     name: string;
     surname: string;
@@ -27,7 +29,7 @@ export type Publication = {
 
 export type Hobby = {
     title: string;
-    icon: string;
+    icon: Icon;
 }
 
 export type Language = {
@@ -43,7 +45,7 @@ export type Education = {
 
 export type Social = {
     link: string;
-    icon: string;
+    icon: Icon;
 }
 
 export type ProfileState = {

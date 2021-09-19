@@ -8,6 +8,17 @@ export type Action<P = any> = {
     payload?: P;
 }
 
+export enum Icon {
+    GITHUB = "GITHUB",
+    LINKEDIN = "LINKEDIN",
+    MEDIUM = "MEDIUM",
+    MUSIC = "MUSIC",
+    MOVIE = "MOVIE",
+    SPORT = "SPORT",
+    BOOK = "BOOK",
+    PAINTING = "PAINTING"
+}
+
 export type State = {
     profile: ProfileState;
     experience: ExperienceState;
