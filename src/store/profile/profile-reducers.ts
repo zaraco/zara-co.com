@@ -9,6 +9,7 @@ const initialState: ProfileState = {
     languages: [],
     hobbies: [],
     education: [],
+    social: [],
 }
 
 const profileReducers = (state: ProfileState = initialState, action: Action): ProfileState => {
@@ -22,6 +23,7 @@ const profileReducers = (state: ProfileState = initialState, action: Action): Pr
                 languages: action?.payload?.languages,
                 hobbies: action?.payload?.hobbies,
                 education: action?.payload?.education,
+                social: action?.payload?.social,
             };
         default:
             return state;

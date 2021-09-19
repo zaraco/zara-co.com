@@ -41,6 +41,11 @@ export type Education = {
     graduatedAt: number;
 }
 
+export type Social = {
+    link: string;
+    icon: string;
+}
+
 export type ProfileState = {
     about?: About;
     certificates?: Certificate[];
@@ -48,4 +53,5 @@ export type ProfileState = {
     languages?: Language[];
     hobbies?: Hobby[];
     education?: Education[];
+    social?: Social[];
 }
