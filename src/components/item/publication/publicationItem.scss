@@ -20,11 +20,18 @@
     object-fit: cover;
   }
   &-title {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  &-journal{
+    font-size: 15px;
   }
   &-link {
     font-size: 15px;
-    margin: 10px 0;
+    margin: 5px 0;
+    a {
+      text-decoration: none;
+    }
   }
 
 }
