@@ -19,7 +19,7 @@ const PublicationItem: React.FC<PublicationItemProps> = (props) => {
                         {props.publication.journal}
                     </div>
                     <div className="publication-item-link">
-                        {props.publication.link}
+                        <a href={props.publication.link}>{props.publication.link}</a>
                     </div>
                 </Card.Body>
             </Card>
