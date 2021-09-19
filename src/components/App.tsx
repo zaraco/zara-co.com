@@ -29,7 +29,7 @@ function App() {
 
     return (
         <div className="app">
-            <Container>
+            <Container className="app-container">
                 <Header/>
                 <Skills/>
                 <Experience/>

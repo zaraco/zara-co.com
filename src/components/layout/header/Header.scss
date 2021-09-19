@@ -1,7 +1,9 @@
 @import 'src/components/variables';
 
 .header {
-  &-col {
+  border-bottom: 1px solid $gray-200;
+  padding-top: 10px;
+  &-col-avatar {
     position: relative;
   }
   &-image {
@@ -30,8 +32,21 @@
     }
   }
   &-description {
-    position: absolute;
-    top: 180px;
-    left: 216px
+    margin-top: 20px;
+  }
+  &-col-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  &-social {
+  }
+  &-website {
+    display: none;
+    @media print {
+      display: block;
+    }
+
   }
 }

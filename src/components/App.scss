@@ -5,4 +5,10 @@ body {
   font-family: $font-family-default;
 }
 .app {
+  &-container {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: $gray-300;
+  }
 }
+
