@@ -14,7 +14,7 @@ function Skills() {
             <h3 className="skills-name">Skills</h3>
                      {
                         skillGroups?.map(skillGroup => (
-                            <Col md={4}>
+                            <Col md={6} lg={4}>
                             <SkillGroupItem skillGroup={skillGroup}/>
                             </Col>
                         ))
