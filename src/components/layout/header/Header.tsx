@@ -4,6 +4,8 @@ import {useAppSelector} from "../../../store/hooks";
 import {Card, Col, Row, Image} from "react-bootstrap";
 import './Header.scss';
 import Social from "../social/Social";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
 
@@ -12,7 +14,7 @@ function Header() {
     return (
         <div className="header">
             <Row>
-                <Col className="header-col-avatar" md={6}>
+                <Col className="header-col-avatar" md={8} lg={6}>
                     <Image className="header-image" src={about?.image} roundedCircle/>
                     <Card className="header-card">
                         <Card.Body>
@@ -21,7 +23,7 @@ function Header() {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col md={6} className="header-col-info">
+                <Col md={4} lg={6} className="header-col-info">
                     <div className="header-social">
                         <Social/>
                     </div>
@@ -30,6 +32,10 @@ function Header() {
                     </div>
                     <div className="header-website">
                         <a href={about?.website}>{about?.website}</a>
+                    </div>
+                    <div className="header-location">
+                        <FontAwesomeIcon className="header-location-icon" icon={faMapMarkerAlt} />
+                        {about?.location}
                     </div>
                 </Col>
                 <Col md={12}>

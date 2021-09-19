@@ -3,6 +3,15 @@
 body {
   margin: 0;
   font-family: $font-family-default;
+  -webkit-print-color-adjust: exact !important;
+}
+@media print {
+  @page {
+    size: 330mm 427mm;
+  }
+  .container {
+    max-width: none !important;
+  }
 }
 .app {
   &-container {
