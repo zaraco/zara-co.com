@@ -1,3 +1,5 @@
+@import "node_modules/bootstrap/scss/bootstrap-grid";
+
 .certificate-item {
   &-card {
     width: 100%;
@@ -13,15 +15,35 @@
       -webkit-box-shadow: 0 0 18px -5px rgba(23,79,92,0.76);
       -moz-box-shadow: 0 0 18px -5px rgba(23,79,92,0.76);
     }
+    &-body {
+      display: flex;
+      flex-direction: row;
+    }
   }
   &-image {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
+    @include media-breakpoint-up(md) {
+      width: 70px;
+      height: 70px;
+    }
+    @media print {
+      width: 70px;
+      height: 70px;
+    }
   }
-  &-title {
-    font-size: 20px;
+  &-info {
+    flex: auto;
+    padding-left: 10px;
   }
+
+    &-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
   &-link {
     font-size: 15px;
     margin: 10px 0;
