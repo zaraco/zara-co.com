@@ -10,7 +10,7 @@ interface SocialItemProps extends React.HTMLAttributes<HTMLDivElement> {
 const SocialItem: React.FC<SocialItemProps> = (props) => {
     return(
         <div className="social-item">
-            <a href={props.social.link}>
+            <a href={props.social.link} target="_blank" rel="noreferrer">
                 <IconItem icon={props.social.icon} size="2x"/>
             </a>
         </div>

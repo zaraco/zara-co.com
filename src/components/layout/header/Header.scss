@@ -59,4 +59,20 @@
   &-location-icon {
     margin-right: 5px;
   }
+  &-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  &-button {
+    margin: 5px 2px 10px;
+    &-icon {
+      margin-right: 5px;
+    }
+    &-print {
+      @media print {
+        display: none;
+      }
+    }
+  }
 }

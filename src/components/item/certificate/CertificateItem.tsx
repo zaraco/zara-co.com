@@ -1,6 +1,6 @@
 import React from "react";
 import {Certificate} from "../../../store/profile/models_d";
-import {Card, Col, Image, Row} from "react-bootstrap";
+import {Card, Image} from "react-bootstrap";
 import './CertificateItem.scss';
 
 
@@ -25,7 +25,9 @@ const CertificateItem: React.FC<CertificateItemProps> = (props) => {
                             {props.certificate.date}
                         </div>
                         <div className="certificate-item-link">
-                            {props.certificate.link}
+                            {
+                                props.certificate.link ? <a href={props.certificate.link} target="_blank" rel="noreferrer">Certificates</a> : null
+                            }
                         </div>
                     </div>
                 </Card.Body>
