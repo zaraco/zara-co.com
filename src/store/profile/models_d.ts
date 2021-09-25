@@ -10,6 +10,7 @@ export type About = {
     website: string;
     description: string;
     image: string;
+    source: string;
 }
 
 export type Certificate = {

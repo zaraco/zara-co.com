@@ -1,11 +1,12 @@
 import React from 'react';
 import profileSelectors from "../../../store/profile/profile-selectors";
 import {useAppSelector} from "../../../store/hooks";
-import {Card, Col, Row, Image} from "react-bootstrap";
+import {Card, Col, Row, Image, Button} from "react-bootstrap";
 import './Header.scss';
 import Social from "../social/Social";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
+import {faMapMarkerAlt, faPrint} from "@fortawesome/free-solid-svg-icons";
+import {faGithub} from "@fortawesome/free-brands-svg-icons";
 
 function Header() {
 
@@ -40,6 +41,16 @@ function Header() {
                 </Col>
                 <Col md={12}>
                     <p className="header-description">{about?.description}</p>
+                    <div className="header-buttons">
+                        <Button className="header-button" variant="secondary" href={about?.source} target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon className="header-button-icon" icon={faGithub} />
+                            View Source
+                        </Button>
+                        <Button className="header-button header-button-print" onClick={() => {window.print();}}>
+                            <FontAwesomeIcon className="header-button-icon" icon={faPrint} />
+                            Print
+                        </Button>
+                    </div>
                 </Col>
             </Row>
         </div>

@@ -15,12 +15,15 @@ import Portfolio from "./layout/portfolio/Portfolio";
 import Hobbies from "./layout/hobbies/Hobbies";
 import Languages from "./layout/languages/Languages";
 import Education from "./layout/education/Education";
+import ReactGA from 'react-ga';
+import config from "../store/config";
 
 
 function App() {
     const dispatch = useAppDispatch();
 
     useEffect(() => {
+        ReactGA.initialize(config.GOOGLE_ANALYTICS_ID);
         dispatch(profileActions.fetchProfile());
         dispatch(experienceActions.fetchExperience());
         dispatch(skillsActions.fetchAction());
