@@ -15,7 +15,7 @@ function Hobbies() {
             <Row>
                 {
                     hobbies?.map(hobby => (
-                        <Col md={2}>
+                        <Col md={4} lg={3}>
                             <HobbyItem hobby={hobby}/>
                         </Col>
                     ))

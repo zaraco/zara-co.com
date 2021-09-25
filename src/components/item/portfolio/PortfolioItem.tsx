@@ -12,7 +12,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = (props) => {
         <div className="portfolio-item">
             <Card className="portfolio-item-card">
                 <Card.Img variant="top" src={props?.portfolio?.image}/>
-                <Card.Body>
+                <Card.Body className="portfolio-item-card-body">
                     <Card.Title className="portfolio-item-title">{props?.portfolio?.title}</Card.Title>
                     <Card.Text className="portfolio-item-tags">
                         {props?.portfolio?.tags.map(tag => (

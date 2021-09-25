@@ -15,7 +15,7 @@ function Education() {
             <Row>
                 {
                     education?.map(item => (
-                        <Col md={4}>
+                        <Col md={6} lg={4}>
                             <EducationItem education={item}/>
                         </Col>
                     ))
