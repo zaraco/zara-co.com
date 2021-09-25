@@ -15,7 +15,7 @@ function Portfolio() {
             <Row>
                 {
                     portfolio?.map(item => (
-                        <Col md={3}>
+                        <Col md={4} lg={3}>
                             <PortfolioItem portfolio={item}/>
                         </Col>
                     ))
