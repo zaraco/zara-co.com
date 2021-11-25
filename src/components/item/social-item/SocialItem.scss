@@ -1,3 +1,15 @@
+@import "../../variables";
+
 .social-item {
   padding-left: 10px;
+  a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+  }
+  &-link {
+    margin-right: 7px;
+    color: $gray-700;
+  }
 }
