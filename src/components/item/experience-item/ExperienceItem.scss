@@ -58,9 +58,14 @@
   &-company {
     font-size: 14px;
   }
-  &-urls-url {
-    margin-right: 10px;
-    font-size: 14px;
+  &-urls{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &-url {
+      margin-right: 10px;
+      font-size: 14px;
+    }
   }
   &-wrapper {
     display: flex;
