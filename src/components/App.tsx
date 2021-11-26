@@ -24,6 +24,7 @@ function App() {
 
     useEffect(() => {
         ReactGA.initialize(config.GOOGLE_ANALYTICS_ID);
+        ReactGA.pageview(window.location.pathname)
         dispatch(profileActions.fetchProfile());
         dispatch(experienceActions.fetchExperience());
         dispatch(skillsActions.fetchAction());

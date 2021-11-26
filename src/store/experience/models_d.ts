@@ -5,6 +5,8 @@ export type Experience = {
     location: string,
     duration: string,
     image: string,
+    description: string,
+    urls: string[]
 }
 
 export type ExperienceState = {

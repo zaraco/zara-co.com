@@ -15,7 +15,7 @@ function Experience() {
             <Row>
                 {
                     experience?.map(item => (
-                        <Col lg={6}>
+                        <Col lg={12}>
                             <ExperienceItem experience={item}/>
                         </Col>
                     ))

@@ -1,6 +1,6 @@
 import React from "react";
 import {Experience} from "../../../store/experience/models_d";
-import {Badge, Card, Col, Image, Row} from "react-bootstrap";
+import {Badge, Card, Image} from "react-bootstrap";
 import './ExperienceItem.scss';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
@@ -16,11 +16,22 @@ const ExperienceItem: React.FC<ExperienceItemProps> = (props) => {
                 <Card.Body className="experience-item-card-body">
                     <Image className="experience-item-image" src={props?.experience?.image} roundedCircle/>
                     <div className="experience-item-info">
+                        <div className="experience-item-wrapper">
                         <h4 className="experience-item-title">
                             {props?.experience?.title}
                         </h4>
-                        <div className="experience-item-company">
-                            {props?.experience?.company}
+                        <div className="experience-item-location">
+                            <FontAwesomeIcon className="experience-item-location-icon" icon={faMapMarkerAlt}/>
+                            {props?.experience?.location}
+                        </div>
+                        </div>
+                        <div className="experience-item-wrapper">
+                            <div className="experience-item-company">
+                                {props?.experience?.company}
+                            </div>
+                            <div className="experience-item-duration">
+                                {props?.experience?.duration}
+                            </div>
                         </div>
                         <div className="experience-item-technologies">
                             {props?.experience?.technologies?.map(item => (
@@ -29,19 +40,16 @@ const ExperienceItem: React.FC<ExperienceItemProps> = (props) => {
                                 </Badge>
                             ))}
                         </div>
-                        <Row>
-                            <Col>
-                                <div className="experience-item-location">
-                                    <FontAwesomeIcon className="experience-item-location-icon" icon={faMapMarkerAlt}/>
-                                    {props?.experience?.location}
-                                </div>
-                            </Col>
-                            <Col>
-                                <div>
-                                    {props?.experience?.duration}
-                                </div>
-                            </Col>
-                        </Row>
+                        <div className="experience-item-description">
+                            {props?.experience?.description}
+                        </div>
+                        <div className="experience-item-urls">
+                            {props?.experience?.urls.map(item => (
+                                <a href={item} className="experience-item-urls-url">
+                                    {item}
+                                </a>
+                            ))}
+                        </div>
                     </div>
                 </Card.Body>
             </Card>
