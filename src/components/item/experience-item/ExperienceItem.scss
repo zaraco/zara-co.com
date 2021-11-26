@@ -44,8 +44,11 @@
   &-technology {
     margin-right: 5px;
   }
-  &-location-icon {
-    margin-right: 5px;
+  &-location {
+    color: $gray-600;
+    &-icon {
+      margin-right: 5px;
+    }
   }
   &-title {
     font-size: 18px;
@@ -54,5 +57,19 @@
   }
   &-company {
     font-size: 14px;
+  }
+  &-urls-url {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  &-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-duration {
+    color: $gray-600;
   }
 }
